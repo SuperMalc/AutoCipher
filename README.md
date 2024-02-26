@@ -1,5 +1,5 @@
 # AutoCipher
-A 2017 CryptoLocker like program writte in Python that encrypts all the files on your windows system
+A 2017 CryptoLocker like program written in Python 2.7 that encrypts all the files on your windows system
 
 
 WARNING:
