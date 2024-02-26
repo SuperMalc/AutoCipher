@@ -6,4 +6,4 @@ WARNING:
 
 
 You may lose all files on your computer.
-I am not responsible for improper use of this program. Use it at your risk.
+I am not responsible for improper use of this program. <br>Use it at your risk.
